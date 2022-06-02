@@ -9,7 +9,7 @@
 --main-bg-color:black;
 --body-before:#70d7f61a;
 --body-after: #70d7f633;
---body-animation: flicker;
+--body-animation: none;
 --logo: url("https://mattstrenk.com/theme.park/css/addons/unraid/login-page/alien/logo/wings_shadow.png") center no-repeat;
 --text-color: #ffffff;
 --input-color: #ffffff;
@@ -23,7 +23,7 @@
 --selection-color: #8f2809;
 --custom-text-header:#ffffff;
 --custom-text-header-shadow:#ffffff;
---custom-text-header-animation: textflicker;
+--custom-text-header-animation: none;
 --input-font: 'Share Tech Mono', monospace;
 --text-font: 'Share Tech Mono', monospace;
 --loginbox-background-color: transparent;
