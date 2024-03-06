@@ -1,7 +1,7 @@
 #!/bin/bash
 TYPE="retro-terminal"
-THEME="green.css"
-DOMAIN="theme-park.dev" # If you update the domain after the script has been run, You must disable and re enable JS or the whole theme.  
+THEME="white.css"
+DOMAIN="mattstrenk.com" # If you update the domain after the script has been run, You must disable and re enable JS or the whole theme.  
 ADD_JS="true"
 JS="custom_text_header.js"
 DISABLE_THEME="false"
@@ -19,7 +19,7 @@ UNRAID_VERSION="$2"
 IFS=$' \t\n'
 LOGIN_PAGE="/usr/local/emhttp/login.php"
 # Changing file path to login.php if version >= 6.10
-if [[ "${UNRAID_VERSION}" =~ ^6.10.* ]]; then
+if [[ "${UNRAID_VERSION}" =~ ^6.12.* ]]; then
 echo "Unraid version: ${UNRAID_VERSION}, changing path to login page"
 LOGIN_PAGE="/usr/local/emhttp/webGui/include/.login.php"
 fi
@@ -39,7 +39,7 @@ fi
 
 # Use correct domain style
 case ${DOMAIN} in
-  *"github.io"*)
+  *"mattstrenk.com"*)
   echo "Switching to github.io URL style"
     DOMAIN="${DOMAIN}\/theme.park"
     ;;
